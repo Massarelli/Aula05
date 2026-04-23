@@ -1,0 +1,14 @@
+C:\01-Projetos\ADA-dotnet\Aula05\obj\Debug\net10.0\Aula05.GeneratedMSBuildEditorConfig.editorconfig
+C:\01-Projetos\ADA-dotnet\Aula05\obj\Debug\net10.0\Aula05.AssemblyInfoInputs.cache
+C:\01-Projetos\ADA-dotnet\Aula05\obj\Debug\net10.0\Aula05.AssemblyInfo.cs
+C:\01-Projetos\ADA-dotnet\Aula05\obj\Debug\net10.0\Aula05.csproj.CoreCompileInputs.cache
+C:\01-Projetos\ADA-dotnet\Aula05\bin\Debug\net10.0\Aula05.exe
+C:\01-Projetos\ADA-dotnet\Aula05\bin\Debug\net10.0\Aula05.deps.json
+C:\01-Projetos\ADA-dotnet\Aula05\bin\Debug\net10.0\Aula05.runtimeconfig.json
+C:\01-Projetos\ADA-dotnet\Aula05\bin\Debug\net10.0\Aula05.dll
+C:\01-Projetos\ADA-dotnet\Aula05\bin\Debug\net10.0\Aula05.pdb
+C:\01-Projetos\ADA-dotnet\Aula05\obj\Debug\net10.0\Aula05.dll
+C:\01-Projetos\ADA-dotnet\Aula05\obj\Debug\net10.0\refint\Aula05.dll
+C:\01-Projetos\ADA-dotnet\Aula05\obj\Debug\net10.0\Aula05.pdb
+C:\01-Projetos\ADA-dotnet\Aula05\obj\Debug\net10.0\Aula05.genruntimeconfig.cache
+C:\01-Projetos\ADA-dotnet\Aula05\obj\Debug\net10.0\ref\Aula05.dll
