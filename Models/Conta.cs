@@ -79,6 +79,17 @@ public class Conta
         Console.WriteLine($"Saldo: {Saldo:C}");
         Console.WriteLine($"Status da Conta: {(StatusConta ? "Ativa" : "Inativa")}");
     }
+
+    //como o Titular é private temos que retornar por um método para leitura.
+    public string RetornarTitular()
+    {
+        return Titular;
+    }
+    
+    public decimal RetornarSaldo()
+    {
+        return Saldo;
+    }
 }
 
 

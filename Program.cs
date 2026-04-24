@@ -1,71 +1,132 @@
 ﻿using Aula05.Models;
 
-// 1. Criar instância da classe conta
-var conta1 = new Conta("Maria");
+Menu menu = new Menu();
 
-// Confirmar que ela foi criada
-conta1.ApresentarDados();
+bool executarSistema = true;
 
-Console.WriteLine("\nTentando sacar um valor maior que o saldo disponível...");
-try
+while (executarSistema)
 {
-    conta1.Sacar(10.00m);
-}
-catch (Exception ex)
-{
-    // capturando a exceção e exibindo a mensagem de erro
-    Console.WriteLine($"Erro: {ex.Message}");
-}
+    Console.WriteLine();
+    Console.WriteLine("##################");
+    Console.WriteLine("Selecione uma opção");
+    Console.WriteLine("1 - Criar nova conta");
+    Console.WriteLine("2 - Listar contas");
+    Console.WriteLine("3 - Depositar valores");
+    Console.WriteLine("4 - Sacar valores");
+    Console.WriteLine("5 - Inativar conta");
+    Console.WriteLine("6 - Sair");
+    Console.WriteLine("##################");
+    Console.WriteLine();
 
-Console.WriteLine("\nDepositando um valor positivo...");
-try
-{
-    conta1.Depositar(100.00m);
-}
-catch (Exception ex)
-{
-    Console.WriteLine($"Erro: {ex.Message}");
-}
+    string opcao = Console.ReadLine() ?? string.Empty;
 
-Console.WriteLine("\nTentando sacar um valor negativo...");
-try
-{
-    conta1.Sacar(-20.00m);
-}
-catch (Exception ex)
-{
-    Console.WriteLine($"Erro: {ex.Message}");
-}
+    switch (opcao)
+    {
+        case "1":
+        menu.CriarNovaConta();
+        break;
 
-Console.WriteLine("\nTentando inativar a conta com saldo disponível...");
-try
-{
-    conta1.InativarConta();
-}
-catch (Exception ex)
-{
-    Console.WriteLine($"Erro: {ex.Message}");
-}
+        case "2":
+        menu.ListarContasCriadas();
+        break;
 
-Console.WriteLine("\nSacando o valor total para zerar o saldo...");
-try
-{
-    conta1.Sacar(100.00m);
-}
-catch (Exception ex)
-{
-    Console.WriteLine($"Erro: {ex.Message}");
+        case "3":
+        menu.DepositarValores();
+        break;
+
+        case "4":
+        menu.SacarValores();
+        break;
+
+        case "5":
+        menu.InativarConta();
+        break;
+
+        case "6":
+        Console.WriteLine("Sistema encerrado...");
+        break;
+    }
 }
 
-Console.WriteLine("\nInativando a conta...");
-try
-{
-    conta1.InativarConta();
-}
-catch (Exception ex)
-{
-    Console.WriteLine($"Erro: {ex.Message}");
-}
+
+
+
+
+// using Aula05.Models;
+
+// // 1. Criar instância da classe conta
+// var conta1 = new Conta("Maria");
+
+// // Confirmar que ela foi criada
+// conta1.ApresentarDados();
+
+// Console.WriteLine("\nTentando sacar um valor maior que o saldo disponível...");
+// try
+// {
+//     conta1.Sacar(10.00m);
+// }
+// catch (Exception ex)
+// {
+//     // capturando a exceção e exibindo a mensagem de erro
+//     Console.WriteLine($"Erro: {ex.Message}");
+// }
+
+// Console.WriteLine("\nDepositando um valor positivo...");
+// try
+// {
+//     conta1.Depositar(100.00m);
+// }
+// catch (Exception ex)
+// {
+//     Console.WriteLine($"Erro: {ex.Message}");
+// }
+
+// Console.WriteLine("\nTentando sacar um valor negativo...");
+// try
+// {
+//     conta1.Sacar(-20.00m);
+// }
+// catch (Exception ex)
+// {
+//     Console.WriteLine($"Erro: {ex.Message}");
+// }
+
+// Console.WriteLine("\nTentando inativar a conta com saldo disponível...");
+// try
+// {
+//     conta1.InativarConta();
+// }
+// catch (Exception ex)
+// {
+//     Console.WriteLine($"Erro: {ex.Message}");
+// }
+
+// Console.WriteLine("\nSacando o valor total para zerar o saldo...");
+// try
+// {
+//     conta1.Sacar(100.00m);
+// }
+// catch (Exception ex)
+// {
+//     Console.WriteLine($"Erro: {ex.Message}");
+// }
+
+// Console.WriteLine("\nInativando a conta...");
+// try
+// {
+//     conta1.InativarConta();
+// }
+// catch (Exception ex)
+// {
+//     Console.WriteLine($"Erro: {ex.Message}");
+// }
+
+// Menu menu = new Menu();
+
+// menu.CriarNovaConta();
+
+
+
 
 /*
 Para consolidar, veja esse resumo mental do seu processo:
@@ -98,3 +159,4 @@ A Instância (new): É o momento em que um carro real sai da fábrica e vai para
 
 Os Métodos: São os pedais e botões. Você pisa no acelerador (Acelerar()) ou freia (Frear()). Mas se você tentar acelerar sem ligar o carro, ou frear com o carro desligado, o sistema de segurança (as validações) vai impedir que algo ruim aconteça.
 */
+
